@@ -12,10 +12,11 @@ public class CountResult {
     }
 
     public void addOccurrence(final Character character) {
-        int oldValue = 0;
+        int oldValue = 1;
 
-        if (this.resultMap.containsKey(character)) {
+       if (this.resultMap.containsKey(character)) {
             oldValue = this.resultMap.get(character);
+            oldValue++;
         }
 
         this.resultMap.put(character, oldValue);
