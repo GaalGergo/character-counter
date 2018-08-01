@@ -18,7 +18,6 @@ public class CountResult {
             oldValue = this.resultMap.get(character);
             oldValue++;
         }
-
         this.resultMap.put(character, oldValue);
     }
 
